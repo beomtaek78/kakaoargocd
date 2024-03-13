@@ -58,7 +58,7 @@ spec:
   # type 지정이 되지 않았다면 cluster-ip 가 기본 타입
   selector:       # 연결할 Pod 의 Label
     color: blue
-  type: nodePort
+  type: NodePort
   ports:
   - port: 80            # LB 의 포트가 됨!!! = Cluster-IP 포트가 됨
     targetPort: 80
