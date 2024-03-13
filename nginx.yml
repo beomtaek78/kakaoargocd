@@ -58,10 +58,10 @@ spec:
   # type 지정이 되지 않았다면 cluster-ip 가 기본 타입
   selector:       # 연결할 Pod 의 Label
     color: blue
-  type: LoadBalancer
+  type: nodePort
   ports:
   - port: 80            # LB 의 포트가 됨!!! = Cluster-IP 포트가 됨
     targetPort: 80
-    # nodePort: 30001 -> 임의의 NodePort 가 선택됨
+    nodePort: 30001 -> 임의의 NodePort 가 선택됨
     # protocol: TCP   # 대문자로. TCP가 default
 
